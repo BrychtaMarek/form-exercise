@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   --secondary-bg-color: rgba(243, 243, 243, 0.829);
-  --greenColor: rgba(19, 102, 19, 0.74);
+  --greenColor: #596D48;
 }
 
 body {
@@ -23,34 +23,46 @@ body {
 .image-bg {
   width: 33vw;
   height: 100%;
+  position: relative;
 }
 
 .image-bg > img {
   width: 100%;
   height: 100%;
-  position: relative;
+  object-fit: cover;
 }
 .image-bg .dark-background {
-  width: 33%;
-  height: 12vh;
+  width: 100%;
+  height: 25vh;
   position: absolute;
   top: 300px;
   left: 0;
-  background-color: white;
-  opacity: 0.3;
-  display: inline;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .dark-background img {
-  width: 30%;
-  height: inherit;
+  width: 25%;
+  color: black;
+  object-fit: contain;
+}
+
+.dark-background h2{
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+}
+
+.credit {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  color: yellow;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 .content {
@@ -62,18 +74,20 @@ body {
 
 .box {
   height: 33%;
-  padding-left: 50px;
+  padding-left: 10vw;
   padding-right: 50px;
+  padding-bottom: 50px;
 }
 
 .header {
   align-content: end;
   background-color: var(--secondary-bg-color);
+  padding-top: 10vh;
   padding-right: 80px;
 }
 
 .header > p {
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .submit-wrapper {
@@ -86,8 +100,9 @@ form {
   border-style: none;
   padding: 0;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
 }
 
 .input-wrapper {
@@ -111,8 +126,22 @@ form {
 input {
   flex-basis: 50vw;
   display: flex;
-  border: 2px solid grey;
+  border: 1px solid grey;
   border-radius: 5px;
+  padding: 10px 20px;
+}
+
+input:focus {
+  outline: 2px solid blue;
+  box-shadow: inset;
+}
+
+input:user-invalid{
+  outline: 2px solid red;
+}
+
+input:user-valid{
+  outline: 2px solid green;
 }
 
 label {
@@ -123,9 +152,11 @@ button {
   padding: 15px 40px;
   background-color: var(--greenColor);
   color: white;
-  font-weight: 600;
+  font-weight: 900;
+  font-size: medium;
   text-transform: capitalize;
   border-radius: 15px;
+  font-family: 'logoFont';
 }
 
 a {
