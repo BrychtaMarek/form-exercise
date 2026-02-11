@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="image-bg">
+      <img src="adnan-khan-VS2C5_GI_MM-unsplash.jpg" alt="IT background image" />
+      <div class="dark-background">
+        <img src="odin-lined-logo.png" alt="ODIN Project logo">
+        <h2>ODIN</h2>
+      </div>
+      <div class="credit"><p>Photo by <a href="https://unsplash.com/@adnan10?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Adnan Khan</a> on <a href="https://unsplash.com/photos/guy-fawkes-mask-VS2C5_GI_MM?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+      </p></div>
+    </div>
+    <div class="content">
+      <div class="header box">
+        <p>
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. <br />
+          Sign up <i>now</i> to get started.
+        </p>
+        <p>
+          You <i>know</i> you want to.
+        </p>
+      </div>
+      <div class="form box">
+          <form id="createAcc" action>
+            <legend ><h2>Let's do this!</h2></legend>
+            <div class="input-wrapper">
+              <div class="flex-item-input-group">
+                <div class="input">
+                  <label for="firstName">
+                    First name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Ann">
+                
+                </div>
+                
+                <div class="input">
+                  <label for="lastName">
+                    Last name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Backen">
+                
+                </div>
+              </div>
+              
+              <div class="flex-item-input-group">
+                <div class="input">
+                  <label for="email">
+                    Email *</label>
+                    <input 
+                    accept="email" id="email" name="email" placeholder="holla.ha@gmail.com"
+                    required>
+                
+                </div>
+                
+                <div class="input">
+                  <label for="phone">
+                    Phone number</label>
+                    <input type="tel" id="phone" name="phone" 
+                    accept="tel"
+                    placeholder="666 777 888"
+                    minlength=9>
+                </div>
+              </div>
+              
+              <div class="flex-item-input-group">
+                <div class="input">
+                  <label for="pwd">
+                    Password *</label>
+                    <input type="password" id="pwd" name="pwd" required minlength="6">
+                
+                </div>
+                
+                <div class="input">
+                  <label for="pwdConfirm">
+                    Confirm password *</label>
+                    <input type="password" id="pwdConfirm" name="pwdConfirm" required minlength="6">
+                
+                </div>
+              </div>
+            </div>
+          </form>
+          </div>
+      <div class="submit-wrapper box">
+        <button type="submit" form="createAcc">Create account</button>
+        <p>Already have an account? <a href="/login">Log in</a></p>
+      </div>
+        
+
+      
+
+    </div>
+  </body>
+</html>
